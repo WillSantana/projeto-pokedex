@@ -1,0 +1,106 @@
+/* Importa a fonte 'Oxanium' do Google Fonts com diferentes pesos (300, 400, 500, 600, 700, 800) */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* Define um estilo de reset para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive; /* Define a fonte padrão para todo o documento */
+}
+
+/* Estilos para o corpo da página */
+body {
+    text-align: center; /* Alinha o texto ao centro */
+    background: linear-gradient(to bottom, #6ab7f5, #fff); /* Aplica um gradiente de fundo */
+    min-height: 100vh; /* Define a altura mínima da página para ocupar toda a tela verticalmente */
+}
+
+/* Estilos para a seção principal da página */
+main {
+    display: inline-block; /* Define o elemento como um bloco inline */
+    margin-top: 2%; /* Adiciona margem superior */
+    padding: 15px; /* Adiciona espaço interno */
+    position: relative; /* Define a posição relativa para posicionamento dos elementos internos */
+}
+
+/* Estilos para a imagem da Pokédex */
+.pokedex {
+    width: 100%; /* Largura máxima de 100% */
+    max-width: 425px; /* Largura máxima de 425 pixels */
+}
+
+/* Estilos para a imagem do Pokémon */
+.pokemon__image {
+    position: absolute; /* Define a posição absoluta para posicionar com base no pai */
+    bottom: 50%; /* Alinha a parte inferior da imagem no centro vertical */
+    left: 50%; /* Alinha a parte esquerda da imagem no centro horizontal */
+    transform: translate(-50%, 0); /* Centraliza horizontalmente */
+    height: 18%; /* Define a altura da imagem */
+}
+
+/* Estilos para a seção de dados do Pokémon */
+.pokemon__data {
+    position: absolute; /* Define a posição absoluta para posicionar com base no pai */
+    font-weight: bold; /* Define a fonte em negrito */
+    color: #bda7a7; /* Define a cor do texto */
+    top: 55%; /* Alinha a parte superior da seção no centro vertical */
+    right: 27%; /* Alinha a parte direita da seção no centro horizontal */
+    font-size: clamp(8px, 5vw, 25px); /* Define um tamanho de fonte responsivo */
+}
+
+/* Estilos para o nome do Pokémon */
+.pokemon__name {
+    color: #36393c; /* Define a cor do nome do Pokémon */
+    text-transform: capitalize; /* Capitaliza o texto */
+}
+
+/* Estilos para o formulário de pesquisa */
+.form {
+    position: absolute; /* Define a posição absoluta para posicionar com base no pai */
+    width: 65%; /* Define a largura do formulário */
+    top: 64%; /* Alinha a parte superior do formulário */
+    left: 13.5%; /* Alinha a parte esquerda do formulário */
+}
+
+/* Estilos para o campo de pesquisa */
+.input_search {
+    width: 100%; /* Largura total */
+    padding: 5%; /* Espaçamento interno */
+    outline: none; /* Remove o contorno padrão do campo de entrada */
+    border: 2px solid #333; /* Adiciona uma borda sólida */
+    border-radius: px; /* Corrigido o valor de border-radius (deve ser um número, por exemplo, border-radius: 5px;) */
+    font-size: clamp(8px, 5vw, 1rem); /* Define um tamanho de fonte responsivo */
+    color: #3a444d; /* Cor do texto */
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333; /* Adiciona sombra à caixa de entrada */
+}
+
+/* Estilos para os botões */
+.buttons {
+    position: absolute; /* Define a posição absoluta para posicionar com base no pai */
+    bottom: 10%; /* Alinha a parte inferior do grupo de botões */
+    left: 50%; /* Alinha o grupo de botões no centro horizontal */
+    width: 65%; /* Define a largura do grupo de botões */
+    transform: translate(-57%, 0); /* Centraliza horizontalmente */
+    display: flex; /* Define a exibição flexível para alinhar os botões horizontalmente */
+    gap: 20px; /* Espaço entre os botões */
+}
+
+/* Estilos para os botões individuais */
+.button {
+    width: 50%; /* Largura de 50% para cada botão */
+    padding: 4%; /* Espaçamento interno */
+    border: 2px solid #000; /* Borda sólida */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: clamp(8px, 5vw, 1rem); /* Define um tamanho de fonte responsivo */
+    font-weight: 600; /* Define o peso da fonte */
+    color: white; /* Cor do texto */
+    background-color: #444; /* Cor de fundo */
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333; /* Adiciona sombra aos botões */
+}
+
+/* Estilos para os botões quando pressionados */
+.button:active {
+    box-shadow: inset -4px 4px 0 #222; /* Adiciona uma sombra interna quando o botão é pressionado */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte quando o botão é pressionado */
+}
